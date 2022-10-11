@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Daily Post</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="logo.png">
+        <link rel="stylesheet" href="diseño.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="banner">
+            <a href="index.php"><img src="logo.png" class="logo"></a>
+            <div class="botones">
+                <a href="#quienes"><button class="boton4">Quienes somos</button></a>
+                <a href="#contactenos"><button class="boton2">Contáctenos</button></a>
+                <a href="#registro"><button class="boton">Registro</button></a>
+                <a href="login.php"><button class="boton3">Login</button></a>
+            </div>
+        </div>
+        <style>
+            body
+            {
+                background-color: #121212;;
+            }
+        </style>
+        <div class="contenedor-slider">
+            <div class="slider" id="slider">
+                <section class="seccionslider"><img src="imagenes/img7.jpg"></section>
+                <section class="seccionslider"><img src="imagenes/img8.jpg"></section>
+                <section class="seccionslider"><img src="imagenes/img9.jpg"></section>
+                <section class="seccionslider"><img src="imagenes/img10.jpg"></section>
+            </div>
+            <div id="antes" class="antes">&#60;</div>
+            <div id="despues" class="despues">&#62;</div>
+        </div>          
+        <script type="text/javascript">
+
+            var slider=$('#slider');
+            var siguiente = $('#despues');
+            var anterior = $('#antes');
+            $('#slider .seccionslider:last').insertBefore('#slider .seccionslider:first');
+            slider.css('margin-left', '-'+100+'%');
+
+            function moverD() 
+            {
+                slider.animate(
+                {
+                    marginLeft:'-'+200+'%'
+                } 
+                ,700, 
+                function()
+                {
+                    $('#slider .seccionslider:first').insertAfter('#slider .seccionslider:last');
+                    slider.css('margin-left', '-'+100+'%');
+                });
+            }
+
+            function moverI() 
+            {
+                slider.animate(
+                {
+                    marginLeft:0
+                } 
+                ,700, 
+                function()
+                {
+                    $('#slider .seccionslider:last').insertBefore('#slider .seccionslider:first');
+                    slider.css('margin-left', '-'+100+'%');
+                });
+            }
+
+            function autoplay() 
+            {
+                interval = setInterval(function()
+                {
+                    moverD();
+                }, 6000);
+            }  
+
+            siguiente.on('click',function() {
+                moverD();
+                clearInterval(interval);
+                autoplay();
+            });
+
+            anterior.on('click',function() {
+                moverI();
+                clearInterval(interval);
+                autoplay();
+            });
+
+            autoplay();
+
+        </script>               
+        <a name="quienes">         
+            <div class="info">
+                <p class="letra">Aquí encontrarás todo tipo de eventos, te enviaremos datos de cada uno. Para más información, únete a nuestra comunidad.</p>
+            </div>   
+            <div class="container">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="elegir"></div>
+                        <button type="button" class="toggle-btn" onclick="login()">Quienes somos</button>
+                        <button type="button" class="toggle-btn" onclick="registrar()">Integrantes</button>
+                    </div>
+                    <div style="display: flex;">
+                        <form id="login" class="input-group">
+                            <table border="0" width="95%" align="center" style="margin-top: -5vw;">
+                                <tr>
+                                    <td width="33%"> 
+                                        <div class="texto1">
+                                            <center>Misión</center>
+                                            <div class="prueba"></div>
+                                            <div class="pantalla5">
+                                                <div class="letra8">
+                                                    <center>
+                                                        Proveer un ambiente divertido y seguro en los clientes y proporcionar apoyo publicitario a los empresarios.                                        
+                                                    </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="33%">
+                                        <div class="texto2">
+                                            <center>Visión</center>
+                                            <div class="pantalla6">
+                                                <div class="letra9">
+                                                    <center>
+                                                        Permanecer como un proyecto auténtico, liderado por la innovación y enfocado a hacer un aporte para un mundo mejor.                                     
+                                                    </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td width="34%">
+                                        <div class="texto3">
+                                            <center>Objetivo</center>
+                                            <div class="pantalla7">
+                                                <div class="letra10">
+                                                    <center>
+                                                        Buscar que un usuario se sienta comodo al momento de bucar algún evento que le gusta, y al mismo momento interarctuar con la página 
+                                                        de la mejor manera.                                   
+                                                    </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                        <form id="registrar" class="input-group">
+                            <div class="quienes">
+                                <table border="0" width="95%" align="center">
+                                    <tr>
+                                        <td width="25%">
+                                            <div class="imagen">
+                                                <div class="pantalla">
+                                                    <div class="letra3">
+                                                        <center>
+                                                            David es un chico dedicado y responsable y está
+                                                            dispuesto a hacer todo lo posible por lograr sus metas.                                        
+                                                        </center>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="25%">
+                                            <div class="imagen2">
+                                                <div class="pantalla2">
+                                                    <div class="letra4">
+                                                        <center>
+                                                            Yulieth es una chica agradable, y responsable
+                                                            al momento de trabajar, responsable y una pieza importante en este proyecto.                                        
+                                                        </center>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="25%">
+                                            <div class="imagen3">
+                                                <div class="pantalla3">
+                                                    <div class="letra5">
+                                                        <center>
+                                                        Jorge es un chico que le gusta programar y cuando va a hacer algo se motiva y lo hace lo mejor posible, mostrando así sus grandes capacidades.                                        
+                                                        </center>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="25%">
+                                            <div class="imagen4">
+                                                <div class="pantalla4">
+                                                    <div class="letra6">
+                                                        <center>
+                                                        Cesar es un chico inteligente y además es trabajador y dedicado con lo que hace, dando apoyo y trabajando para sacar adelante este proyecto.                                        
+                                                        </center>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var x = document.getElementById("login");
+                var y = document.getElementById("registrar");
+                var z = document.getElementById("elegir");
+
+                function login()
+                {
+                    x.style.left="2.6vw";
+                    y.style.left="107vw";
+                    z.style.left="0vw";
+                }
+
+                function registrar()
+                {
+                    x.style.left="-88.5vw";
+                    y.style.left="4vw";
+                    z.style.left="7.8vw";
+                }
+            </script>
+        <a name="contactenos">
+        </a>
+            <div class="contactenos">
+                <b><p class="letra7"> Contáctenos.</p></b>
+                <div class="contacto">
+                    <div style="display: flex;">
+                        <p class="textonombre">Nombre.</p>
+                        <p class="textoasunto">Asunto.</p>
+                        <p class="textoredes">Redes Sociales.</p>
+                    </div>
+                    <br>
+                    <form action="mensaje.php" method="POST" autocomplete="off">
+                        <div style="display: flex;">
+                            <input type="text" name="nombre" class="nombre" placeholder="Nombre" required autocomplete="off">
+                            <input type="text" name="asunto" class="asunto" placeholder="Asunto" required autocomplete="off ">
+                            <img src="imagenes/whatsapp.png" class="whatsapp">
+                            <p class="textowhatsapp"> Whatsapp : +57 3226403046</p> 
+                        </div> 
+                        <br>
+                        <div style="display: flex;">
+                            <p class="textomensaje">Mensaje.</p>
+                            <img src="imagenes/instagram.png" class="instagram">
+                            <p class="textoinstagram"> Instagram : @DailyPost</p>
+                        </div>
+                        <div style="display: flex;">
+                            <textarea name="mensaje" class="mensaje" rows="10" cols="40" placeholder="Escribe aquí tu mensaje" autocomplete="off" required></textarea>
+                            <img src="imagenes/gmail.png" class="gmail">
+                            <p class="textogmail"> Gmail: dailypost@gmail.com</p>
+                        </div> 
+                        <button type="submit" class="enviar">ENVIAR</button>                            
+                    </form>
+                    <br>      
+                </div>                    
+            </div>
+        <a name="registro">
+        </a> 
+            <main>
+                <div class="contenedor_todo">
+                    <div class="caja_trasera">
+                        <div class="caja_trasera_business">
+                            <h3>Quieres ser parte de nosotros?</h3>
+                            <p>Registrate aquí</p>
+                            <button id="btn_member">Daily Post Member</button>
+                        </div>
+
+                        <div class="caja_trasera_member">
+                            <h3>Quieres registrar tu negocio?</h3>
+                            <p>Registra tu negocio aquí</p>
+                            <button id="btn_business">Daily Post Business</button>
+                        </div>
+                    </div>
+
+                    <div class="contenedor_member_business">
+                        <form action="insertar.php" method="POST" class="formulario_member" enctype="multipart/form-data"> 
+                            <h2>Únete a nosotros</h2>
+                            <input type="text" name="nombre" placeholder="Nombre" autocomplete="off">
+                            <input type="email" name="correo" placeholder="Correo electrónico" autocomplete="off">
+                            <input type="text" name="usuario" placeholder="Usuario" autocomplete="off">
+                            <input type="password" name="clave" placeholder="Contraseña" autocomplete="off">
+                            <input type="file" name="foto">
+                            <center><button type="submit" name="enviar1">Registrarme</button></center>
+                        </form>
+
+                        <form action="insertar.php" method="POST" class="formulario_business" enctype="multipart/form-data">
+                            <h2>Registra tu negocio</h2>
+                            <input type="text" name="nombre" placeholder="Nombre de la empresa" autocomplete="off">
+                            <input type="email" name="correo" placeholder="Correo electrónico" autocomplete="off">
+                            <input type="text" name="usuario" placeholder="Usuario" autocomplete="off">
+                            <input type="password" name="clave" placeholder="Contraseña" autocomplete="off">
+                            <input type="file" name="foto">
+                            <center><button type="submit" name="enviar2">Registrar Negocio</button></center>
+                        </form>
+                    </div>
+                </div> 
+            </main> 
+            <script type="text/javascript">
+
+                document.getElementById("btn_member").addEventListener("click", member);
+                document.getElementById("btn_business").addEventListener("click", business);
+
+                var contenedor_member_business=document.querySelector(".contenedor_member_business");
+                var formulario_business=document.querySelector(".formulario_business");
+                var formulario_member=document.querySelector(".formulario_member");
+                var caja_trasera_business=document.querySelector(".caja_trasera_business");
+                var caja_trasera_member=document.querySelector(".caja_trasera_member");
+
+                function member()
+                {
+                    formulario_member.style.display = "block";
+                    contenedor_member_business.style.left = "0.4vw";
+                    formulario_business.style.display = "none";
+                    caja_trasera_member.style.opacity = "1";
+                    caja_trasera_business.style.opacity = "0";
+                }
+
+                function business()
+                {
+                    formulario_member.style.display = "none";
+                    contenedor_member_business.style.left = "22vw";
+                    formulario_business.style.display = "block";
+                    caja_trasera_member.style.opacity = "0";
+                    caja_trasera_business.style.opacity = "1";
+                }
+
+            </script>     
+        <div class="footer">
+            <div class="letrafooter"><h4>Daily Post® 2020</h4></div>
+        </div>
+    </body>
+</html>

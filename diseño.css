@@ -1,0 +1,1097 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quattrocento";
+}
+
+body{
+    background-color: #121212;;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.banner{
+    top: 0;
+    box-shadow: 0vw 0vw 1vw 1.1vw lightblue;
+    background-color: lightblue ;
+    width: 100%;
+    height: 7.6vw;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo{
+    position: absolute;
+    margin-top: 1%;
+    width: 10%;
+    margin-left: 2.4vw;
+}
+
+.boton{
+    margin-right: 1vw;
+    margin-left: 2vw; 
+    margin-top: 2.9vw;
+    background: none;
+    border: 0;
+    color: black;
+    width: 15%;
+    height: 2.85vw;
+    font-size: 1.1vw;
+    outline: none;
+    -webkit-transition: 0.4s;
+}
+
+.boton:hover{
+    transform: scale(1.1);
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.boton2{
+    margin-right: 0vw;
+    margin-left: 2.5vw;
+    margin-top: 2.9vw;
+    background: none;
+    border: 0;
+    color: black;
+    width: 20%;
+    height: 2.85vw; 
+    font-size: 1.1vw;
+    outline: none;   
+    -webkit-transition: 0.4s;
+}
+
+.boton2:hover{
+    transform: scale(1.1);
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.boton3{
+    margin-right: 0vw;
+    margin-left: 0vw;
+    margin-top: 2.9vw;
+    background: none;
+    border: 0;
+    color: black;
+    width: 17%;
+    height: 2.85vw; 
+    font-size: 1.1vw;
+    outline: none;   
+    -webkit-transition: 0.4s;
+}
+
+.boton3:hover{
+    transform: scale(1.1);
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.boton4{
+    margin-right: 0vw;
+    margin-left: 2.5vw;
+    margin-top: 2.9vw;
+    background: none;
+    border: 0;
+    color: black;
+    width: 20%;
+    height: 2.85vw; 
+    font-size: 1.1vw;
+    outline: none;  
+    -webkit-transition: 0.4s; 
+}
+
+.boton4:hover{
+    transform: scale(1.1);
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.botones{
+    margin-left: 54vw;
+}
+
+
+
+
+
+.contenedor-slider{
+    margin: auto;
+    margin-left: 18.2vw;
+    margin-top: 12vw;
+    width: 60vw;
+    height: 30vw;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    width: 400%;
+}
+
+
+.seccionslider{
+    width: 100%;
+}
+
+.slider img{
+    width: 100%;
+}
+
+.antes, .despues {
+    width: 2.3vw;
+    height: 2.3vw;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    margin-top: -15%;
+    transform: translateY(-50%);
+    line-height: 2.1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.antes:hover, .despues:hover {
+    background: white;
+}
+
+.antes{
+    left: 20vw;
+}
+
+.despues {
+    right: 22vw;
+}
+
+
+
+
+
+.info{
+    width: 92.8vw;
+    height: 4.8vw;
+    background-color: white;
+    margin-top: 1.547vw;
+    margin-left: 2.32vw;
+    border-radius: 1.547vw 1.547vw 1.547vw 1.547vw;
+    padding-top: 1vw;
+}
+
+.letra{
+    margin-left: 10.827vw;
+    margin-top: 1vw;
+    font-size: 1.3vw;
+}
+
+
+
+
+
+.quienes{
+    background-color: white;
+    margin-top: -2.7vw;
+    padding-top: 0.5vw;
+    width: 99.1vw;
+    height: 33.254vw;    
+}
+
+.letra2{
+    margin-left: 43.307vw;
+    margin-top: 0.78vw; 
+    font-size: 1.55vw;   
+}
+
+
+
+.container{
+    margin-top: 8vw;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.form-box{
+    width: 98vw;
+    height: 33.254vw;
+    position: relative;
+    margin: 6% auto;
+    background-color: white;
+    border-radius: 0.7vw;
+    overflow: hidden;
+}
+
+.form-box h1{
+    margin-left: 7vw;
+    padding: 2vw 15vw 0vw 5vw;
+}
+
+.button-box{
+    width: 15.6vw;
+    margin: 1.95vw auto;
+    position: relative;
+    box-shadow: 0vw 0vw 1.05vw 0.3vw black;
+    border-radius: 1.56vw;
+}
+
+.toggle-btn{
+    padding: 0.52vw 1.72vw;
+    cursor: pointer;
+    background: transparent;
+    border: 0vw;
+    outline: none;
+    position: relative;
+    font-size: 0.7vw;
+}
+
+#elegir{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 7.8vw;
+    height: 100%;
+    background: linear-gradient(to right , rgba(90, 90, 90, 0.7) , rgba(6, 240, 240, 0.76));
+    border-radius: 1.56vw;
+    transition: 0.8s;
+}
+
+.input-group{
+    margin-left: -4vw;
+    top: 8vw;
+    position: absolute;
+    transition: 0.8s;
+    width: 105vw;
+}
+
+#login{
+    left: 2.6vw;
+}
+
+#registrar{
+    left: 107vw;
+}
+
+
+
+.texto1{
+    margin-top: 14vw;
+    margin-left: 4.6vw;
+    width: 25vw;
+    height: 22vw;
+    border-radius: 10%;
+    font-size: 1.6vw;
+}
+
+.pantalla5{
+    padding-top: 4vw;
+    padding-bottom: 3.5vw;
+    margin-top: -12vw;
+    background-color: black;
+    width: 100%;
+    height: 70%;
+    opacity: 0%;
+    transition: opacity 0.5s;
+    border-radius: 10%;
+}
+
+.letra8{
+    font-size: 2vw;
+    opacity: 0%;
+    padding-top: 1vw;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+.texto1:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.texto1:hover .pantalla5{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.texto1:hover .letra8{
+    opacity: 200%;
+    transition: 0.5s;
+}
+
+
+
+.texto2{
+    margin-top: 12vw;
+    margin-left: 4.6vw;
+    width: 25vw;
+    height: 20vw;
+    border-radius: 10%;
+    font-size: 1.6vw;
+}
+
+.pantalla6{
+    padding-top: 4vw;
+    padding-bottom: 5vw;
+    margin-top: -12vw;
+    background-color: black;
+    width: 100%;
+    height: 70%;
+    opacity: 0%;
+    transition: opacity 0.5s;
+    border-radius: 10%;
+}
+
+.letra9{
+    margin-left: 0vw;
+    font-size: 2vw;
+    opacity: 0%;
+    padding-top: 1vw;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+.texto2:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.texto2:hover .pantalla6{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.texto2:hover .letra9{
+    opacity: 200%;
+    transition: 0.5s;
+}
+
+
+
+.texto3{
+    margin-top: 12vw;
+    margin-left: 4.6vw;
+    width: 25vw;
+    height: 20vw;
+    border-radius: 10%;
+    font-size: 1.6vw;
+}
+
+.pantalla7{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    margin-top: -12vw;
+    background-color: black;
+    width: 100%;
+    height: 75%;
+    opacity: 0%;
+    transition: opacity 0.5s;
+    border-radius: 10%;
+}
+
+.letra10{
+    margin-left: 0vw;
+    font-size: 2vw;
+    opacity: 0%;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+.texto3:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.texto3:hover .pantalla7{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.texto3:hover .letra10{
+    opacity: 200%;
+    transition: 0.5s;
+}
+
+
+
+.imagen{
+    margin-top: 3.9vw;
+    margin-left: 2.4vw;
+    background-image: url(imagenes/david.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10%;
+    -webkit-transition: 0.5s;
+}
+
+.pantalla{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    transition: opacity 0.5s;
+    border-radius: 10%;
+}
+
+.letra3{
+    font-size: 2vw;
+    opacity: 0%;
+    padding-top: 3vw;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+.imagen:hover{
+    background-size: 110% 110%;
+    -webkit-transition: 0.5s;
+    cursor: pointer;
+}
+
+.imagen:hover .pantalla{
+    opacity: 80%;
+    transition: 0.5s;
+}
+
+.imagen:hover .letra3{
+    opacity: 200%;
+    transition: 0.5s;
+}
+
+
+
+.imagen2{
+    margin-top: 3.9vw;
+    margin-left: 3.9vw;
+    background-image: url(imagenes/yulieth.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10%;
+    -webkit-transition: 0.5s;
+}
+
+.pantalla2{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    transition: opacity 0.5s;
+    border-radius: 10%;
+}
+
+.letra4{
+    font-size: 2vw;
+    opacity: 0%;
+    padding-top: 2vw;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+.imagen2:hover{
+    background-size: 110% 110%;
+    -webkit-transition: 0.5s;
+    cursor: pointer;
+}
+
+.imagen2:hover .pantalla2{
+    opacity: 80%;
+    transition: 0.5s;
+}
+
+.imagen2:hover .letra4{
+    opacity: 200%;
+    transition: 0.5s;
+}
+
+
+
+.imagen3{
+    margin-top: 3.9vw;
+    margin-left: 3.9vw;
+    background-image: url(imagenes/jorge.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10%;
+    -webkit-transition: 0.5s;
+}
+
+.pantalla3{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    transition: opacity 0.5s;
+    border-radius: 10%;
+}
+
+.letra5{
+    font-size: 2vw;
+    opacity: 0%;
+    padding-top: 2vw;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+.imagen3:hover{
+    background-size: 110% 110%;
+    -webkit-transition: 0.5s;
+    cursor: pointer;
+}
+
+.imagen3:hover .pantalla3{
+    opacity: 80%;
+    transition: 0.5s;
+}
+
+.imagen3:hover .letra5{
+    opacity: 200%;
+    transition: 0.5s;
+}
+
+
+
+.imagen4{
+    margin-top: 3.9vw;
+    margin-left: 4.6vw;
+    background-image: url(imagenes/cesar.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10%;
+    -webkit-transition: 0.5s;
+}
+
+.pantalla4{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    transition: opacity 0.5s;
+    border-radius: 10%;
+}
+
+.letra6{
+    font-size: 2vw;
+    opacity: 0%;
+    padding-top: 1vw;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+.imagen4:hover{
+    background-size: 110% 110%;
+    -webkit-transition: 0.5s;
+    cursor: pointer;
+}
+
+.imagen4:hover .pantalla4{
+    opacity: 80%;
+    transition: 0.5s;
+}
+
+.imagen4:hover .letra6{
+    opacity: 200%;
+    transition: 0.5s;
+}
+
+
+
+
+
+.contactenos{
+    padding-bottom: 5vw;
+    background-color: white;
+    margin-top: 17vw;
+    padding-top: 0.2vw;
+    width: 99.1vw;
+    height: auto;    
+}
+
+.letra7{
+    font-size: 1.55vw;
+    margin-left: 46vw;
+    margin-top: 1vw;  
+}
+
+.contacto{
+    padding: 3vw;
+    background-color: gray;
+    margin-left: 3.5vw;
+    margin-top: 1vw;
+    width: 84vw;
+    height: auto;
+}
+
+.textonombre{
+    font-size: 1.3vw;    
+}
+
+.nombre{
+    border-radius: 0.3vw;
+    padding: 0.2vw 0.2vw 0.2vw 0.2vw;
+    width: 14vw; 
+    height: 1.3vw;
+    font-size: 1vw; 
+    outline: none;
+    border: 0; 
+}
+
+.textoasunto{
+    margin-left: 18.1vw;
+    font-size: 1.3vw;
+}
+
+.asunto{
+    border-radius: 0.3vw;
+    margin-left: 8.8vw;
+    padding: 0.2vw;
+    width: 14vw; 
+    height: 1.3vw;
+    font-size: 1vw;
+    outline: none;
+    border: 0; 
+}
+
+.textoredes{
+    margin-left: 22vw;
+    font-size: 2vw;
+}
+
+.whatsapp{
+    margin-top: 1vw;
+    width: 3%;
+    height: 3%;
+    margin-left: 12.5vw;
+}
+
+.textowhatsapp{
+    margin-top: 1.5vw;
+    color: white;
+    margin-left: 1.5vw;
+    font-size: 1.3vw;
+}
+
+.instagram{
+    width: 3%;
+    height: 3%;
+    margin-left: 45vw;
+    margin-top: 3.3vw;
+}
+
+.textoinstagram{
+    color: white;
+    margin-left: 1.5vw;
+    font-size: 1.3vw;
+    margin-top: 3.8vw;
+}
+
+.gmail{
+    margin-top: 4vw;
+    width: 3%;
+    height: 3%;
+    margin-left: 12.7vw;
+}
+
+.textogmail{
+    color: white;
+    margin-left: 1.5vw;
+    font-size: 1.3vw;
+    margin-top: 4.6vw;
+}
+
+.textomensaje{
+    margin-top: -0.5vw;
+    font-size: 1.3vw;
+}
+
+.mensaje{
+    border-radius: 0.3vw;
+    margin-top: -3.5vw;
+    width: 35.9vw; 
+    height: 8vw;
+    resize: none;
+    padding: 0.8vw 0.8vw 0.8vw 0.8vw;
+    font-size: 1vw;
+    outline: none;
+    border: 0; 
+}
+
+.enviar{
+    font-family: "consolas";
+    border-radius: 4px;
+    margin-top: 1vw;
+    margin-left: 16.5vw;
+    font-size: 0.9vw;
+    padding: 0.5vw;
+    -webkit-transition: 0.2s;
+}
+
+.enviar:hover{
+    transform: scale(1.1);
+    -webkit-transition: 0.2s;
+    cursor: pointer;
+}
+
+
+
+
+
+main{
+    margin-top: 14vw;
+    width: 99.1vw;
+    height: 32vw; 
+    background-color: white;
+}
+
+.contenedor_todo{
+    width: 100%;
+    max-width: 42.9vw;
+    margin-left: 28vw;
+    margin-top: 5vw;
+    position: absolute;
+}
+
+.caja_trasera{
+    width: 100%;
+    padding: 0.55vw 1.5vw;
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.caja_trasera div{
+    margin: 4.7vw 4vw;
+    color: white;
+    transition: all 500ms;
+}
+
+.caja_trasera div p, 
+.caja_trasera div button{
+    margin-top: 2vw;
+}
+
+.caja_trasera div h3{
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+
+.caja_trasera button{
+    padding: 0.6vw 3vw;
+    border: 0.12vw solid #fff;
+    background: transparent;
+    font-size: 0.75vw;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja_trasera button:hover{
+    background-color: white;
+    color: black;
+}
+
+.caja_trasera_business p{
+    font-size: 1vw;
+}
+
+.caja_trasera_member p{
+    font-size: 1vw;
+}
+
+.contenedor_member_business{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 20.4vw;
+    position: relative;
+    top: -10.8vw;
+    left: 0.4vw;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor_member_business form{
+    width: 100%;
+    padding: 3.5vw 1.1vw;
+    background-color: lightgray;
+    position: absolute;
+    border-radius: 1.1vw;
+    margin-left: 0.5vw;
+}
+
+.contenedor_member_business form h2{
+    font-size: 1.7vw;
+    text-align: center;
+    margin-bottom: 1vw;
+    color: #46A2FD;
+    margin-top: -1.3vw;
+}
+
+.contenedor_member_business form input{
+    width: 95%;
+    margin-top: 1.1vw;
+    padding: 0.55vw;
+    border: none;
+    background: #f2f2f2;
+    font-size: 0.9vw;
+    outline: none;
+}
+
+.contenedor_member_business form button{
+    padding: 0.55vw 2.2vw;
+    margin-top: 2.2vw;
+    border: none;
+    font-size: 0.75vw;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario_business{
+    display: none;
+    margin-left: 0.6vw;
+}
+
+.formulario_member{
+    display: block;
+}
+
+
+
+
+
+
+.footer{
+    background-color: #2E2E2E;
+    margin-top: 4.8vw;
+    height: 3.9vw;
+}
+
+.letrafooter{
+    color: white;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 1.1vw;
+    font-size: 1.5vw;
+}
+
+
+
+
+
+
+.caja{
+    margin-left: 10vw;
+    margin-top: 12vw;
+    background-image: url(imagenes/member.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 36.6vw;
+    height: 36.6vw;
+    border-radius: 1vw;
+    position: absolute;
+    overflow: hidden;
+}
+
+.caja img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border: none;
+}
+
+.form-member{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: lightgray;
+    transition: 0.5s;
+    bottom: -111%;
+    padding: 2vw; 
+}
+
+.caja:hover .form-member{
+    bottom: -23vw;
+    cursor: pointer;
+}
+
+.caja:hover img{
+    margin-top: -9vw;
+    cursor: pointer;
+}
+
+.caja input{
+    width: 95%;
+    margin-top: 1.1vw;
+    padding: 0.55vw;
+    border: none;
+    background: #f2f2f2;
+    font-size: 0.9vw;
+    outline: none;    
+}
+
+.caja button{
+    padding: 0.55vw 2.2vw;
+    margin-top: 2.2vw;
+    border: none;
+    font-size: 0.75vw;
+    cursor: pointer;
+    outline: none;
+}
+
+.caja p{
+    font-size: 0.85vw;
+}
+
+
+
+.caja2{
+    margin-left: 54vw;
+    margin-top: 12vw;
+    background-image: url(imagenes/member.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 36.6vw;
+    height: 36.6vw;
+    border-radius: 1vw;
+    position: absolute;
+    overflow: hidden;
+}
+
+.caja2 img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border: none;
+}
+
+.form-member2{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: lightgray;
+    transition: 0.5s;
+    bottom: -111%;
+    padding: 2vw; 
+}
+
+.caja2:hover .form-member2{
+    bottom: -23vw;
+    cursor: pointer;
+}
+
+.caja2:hover img{
+    margin-top: -9vw;
+    cursor: pointer;
+}
+
+.caja2 input{
+    width: 95%;
+    margin-top: 1.1vw;
+    padding: 0.55vw;
+    border: none;
+    background: #f2f2f2;
+    font-size: 0.9vw;
+    outline: none;    
+}
+
+.caja2 button{
+    padding: 0.55vw 2.2vw;
+    margin-top: 2.2vw;
+    border: none;
+    font-size: 0.75vw;
+    cursor: pointer;
+    outline: none;
+}
+
+.caja2 p{
+    font-size: 0.85vw;
+}
+
+.banner2{
+    top: 0;
+    box-shadow: 0vw 0vw 1vw 1.1vw lightblue;
+    background-color: lightblue ;
+    width: 100%;
+    height: 7.6vw;
+    position: fixed;
+    z-index: 1;  
+}
+
+.boton5{
+    margin-left: 43vw; 
+    margin-top: 2.9vw;
+    background: none;
+    border: 0;
+    color: black;
+    width: 15%;
+    height: 2.85vw;
+    font-size: 1.1vw;
+    outline: none;
+    -webkit-transition: 0.4s;    
+}
+
+.boton5:hover{
+    transform: scale(1.1);
+    -webkit-transition: 0.4s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.gustos{
+    background-color: white;
+    border-radius: 2.5vw;
+    margin-left: 17.8vw;
+    margin-top: 10vw;
+    width: 64vw;
+    height: 32vw;
+}
+
+.gustos img{
+    border-radius: 2.3vw 0vw 0vw 2.3vw;
+    width: 32vw;
+    height: 32vw;
+}
+
+.gustos h3{
+    font-size: 1.6vw;
+    margin-top: -1vw;
+    margin-left: 1vw;
+}
+
+.gustos h4{
+    padding: 0.8vw;
+    font-size: 1.1vw;
+    margin-top: 3vw;
+    margin-left: 1vw;
+}
+
+.gustos button{
+    padding: 0.55vw 2.2vw;
+    margin-top: 3vw;
+    margin-bottom: 10vw;
+    margin-left: 10.5vw; 
+    border: none;
+    font-size: 0.75vw;
+    cursor: pointer;
+    outline: none;    
+}
+
+.gustos label{
+    margin-top: -5vw;
+    padding: 0.5vw;
+    font-size: 0.9vw;
+}
+
