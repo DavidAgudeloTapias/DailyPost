@@ -31,7 +31,7 @@ html{
 
 .boton{
     margin-right: 1vw;
-    margin-left: 2vw; 
+    margin-left: 4vw; 
     margin-top: 2.9vw;
     background: none;
     border: 0;
@@ -51,7 +51,7 @@ html{
 
 .boton2{
     margin-right: 0vw;
-    margin-left: 2.5vw;
+    margin-left: 4.5vw;
     margin-top: 2.9vw;
     background: none;
     border: 0;
@@ -71,7 +71,7 @@ html{
 
 .boton3{
     margin-right: 0vw;
-    margin-left: 0vw;
+    margin-left: 2vw;
     margin-top: 2.9vw;
     background: none;
     border: 0;
@@ -89,28 +89,8 @@ html{
     cursor: pointer;
 }
 
-.boton4{
-    margin-right: 0vw;
-    margin-left: 2.5vw;
-    margin-top: 2.9vw;
-    background: none;
-    border: 0;
-    color: black;
-    width: 20%;
-    height: 2.85vw; 
-    font-size: 1.1vw;
-    outline: none;  
-    -webkit-transition: 0.4s; 
-}
-
-.boton4:hover{
-    transform: scale(1.1);
-    -webkit-transition-duration: 0.4s;
-    cursor: pointer;
-}
-
 .botones{
-    margin-left: 54vw;
+    margin-left: 60vw;
 }
 
 
@@ -120,7 +100,7 @@ html{
 .contenedor-slider{
     margin: auto;
     margin-left: 18.2vw;
-    margin-top: 12vw;
+    margin-top: 9vw;
     width: 60vw;
     height: 30vw;
     overflow: hidden;
@@ -192,424 +172,10 @@ html{
 
 
 
-.quienes{
-    background-color: white;
-    margin-top: -2.7vw;
-    padding-top: 0.5vw;
-    width: 99.1vw;
-    height: 33.254vw;    
-}
-
-.letra2{
-    margin-left: 43.307vw;
-    margin-top: 0.78vw; 
-    font-size: 1.55vw;   
-}
-
-
-
-.container{
-    margin-top: 8vw;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-}
-
-.form-box{
-    width: 98vw;
-    height: 33.254vw;
-    position: relative;
-    margin: 6% auto;
-    background-color: white;
-    border-radius: 0.7vw;
-    overflow: hidden;
-}
-
-.form-box h1{
-    margin-left: 7vw;
-    padding: 2vw 15vw 0vw 5vw;
-}
-
-.button-box{
-    width: 15.6vw;
-    margin: 1.95vw auto;
-    position: relative;
-    box-shadow: 0vw 0vw 1.05vw 0.3vw black;
-    border-radius: 1.56vw;
-}
-
-.toggle-btn{
-    padding: 0.52vw 1.72vw;
-    cursor: pointer;
-    background: transparent;
-    border: 0vw;
-    outline: none;
-    position: relative;
-    font-size: 0.7vw;
-}
-
-#elegir{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 7.8vw;
-    height: 100%;
-    background: linear-gradient(to right , rgba(90, 90, 90, 0.7) , rgba(6, 240, 240, 0.76));
-    border-radius: 1.56vw;
-    transition: 0.8s;
-}
-
-.input-group{
-    margin-left: -4vw;
-    top: 8vw;
-    position: absolute;
-    transition: 0.8s;
-    width: 105vw;
-}
-
-#login{
-    left: 2.6vw;
-}
-
-#registrar{
-    left: 107vw;
-}
-
-
-
-.texto1{
-    margin-top: 14vw;
-    margin-left: 4.6vw;
-    width: 25vw;
-    height: 22vw;
-    border-radius: 10%;
-    font-size: 1.6vw;
-}
-
-.pantalla5{
-    padding-top: 4vw;
-    padding-bottom: 3.5vw;
-    margin-top: -12vw;
-    background-color: black;
-    width: 100%;
-    height: 70%;
-    opacity: 0%;
-    transition: opacity 0.5s;
-    border-radius: 10%;
-}
-
-.letra8{
-    font-size: 2vw;
-    opacity: 0%;
-    padding-top: 1vw;
-    transition: opacity 0.5s;
-    color: white;
-}
-
-.texto1:hover{
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.texto1:hover .pantalla5{
-    opacity: 100%;
-    transition: 0.5s;
-}
-
-.texto1:hover .letra8{
-    opacity: 200%;
-    transition: 0.5s;
-}
-
-
-
-.texto2{
-    margin-top: 12vw;
-    margin-left: 4.6vw;
-    width: 25vw;
-    height: 20vw;
-    border-radius: 10%;
-    font-size: 1.6vw;
-}
-
-.pantalla6{
-    padding-top: 4vw;
-    padding-bottom: 5vw;
-    margin-top: -12vw;
-    background-color: black;
-    width: 100%;
-    height: 70%;
-    opacity: 0%;
-    transition: opacity 0.5s;
-    border-radius: 10%;
-}
-
-.letra9{
-    margin-left: 0vw;
-    font-size: 2vw;
-    opacity: 0%;
-    padding-top: 1vw;
-    transition: opacity 0.5s;
-    color: white;
-}
-
-.texto2:hover{
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.texto2:hover .pantalla6{
-    opacity: 100%;
-    transition: 0.5s;
-}
-
-.texto2:hover .letra9{
-    opacity: 200%;
-    transition: 0.5s;
-}
-
-
-
-.texto3{
-    margin-top: 12vw;
-    margin-left: 4.6vw;
-    width: 25vw;
-    height: 20vw;
-    border-radius: 10%;
-    font-size: 1.6vw;
-}
-
-.pantalla7{
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-    margin-top: -12vw;
-    background-color: black;
-    width: 100%;
-    height: 75%;
-    opacity: 0%;
-    transition: opacity 0.5s;
-    border-radius: 10%;
-}
-
-.letra10{
-    margin-left: 0vw;
-    font-size: 2vw;
-    opacity: 0%;
-    transition: opacity 0.5s;
-    color: white;
-}
-
-.texto3:hover{
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.texto3:hover .pantalla7{
-    opacity: 100%;
-    transition: 0.5s;
-}
-
-.texto3:hover .letra10{
-    opacity: 200%;
-    transition: 0.5s;
-}
-
-
-
-.imagen{
-    margin-top: 3.9vw;
-    margin-left: 2.4vw;
-    background-image: url(imagenes/david.JPG);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10%;
-    -webkit-transition: 0.5s;
-}
-
-.pantalla{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    opacity: 0%;
-    transition: opacity 0.5s;
-    border-radius: 10%;
-}
-
-.letra3{
-    font-size: 2vw;
-    opacity: 0%;
-    padding-top: 3vw;
-    transition: opacity 0.5s;
-    color: white;
-}
-
-.imagen:hover{
-    background-size: 110% 110%;
-    -webkit-transition: 0.5s;
-    cursor: pointer;
-}
-
-.imagen:hover .pantalla{
-    opacity: 80%;
-    transition: 0.5s;
-}
-
-.imagen:hover .letra3{
-    opacity: 200%;
-    transition: 0.5s;
-}
-
-
-
-.imagen2{
-    margin-top: 3.9vw;
-    margin-left: 3.9vw;
-    background-image: url(imagenes/yulieth.JPG);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10%;
-    -webkit-transition: 0.5s;
-}
-
-.pantalla2{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    opacity: 0%;
-    transition: opacity 0.5s;
-    border-radius: 10%;
-}
-
-.letra4{
-    font-size: 2vw;
-    opacity: 0%;
-    padding-top: 2vw;
-    transition: opacity 0.5s;
-    color: white;
-}
-
-.imagen2:hover{
-    background-size: 110% 110%;
-    -webkit-transition: 0.5s;
-    cursor: pointer;
-}
-
-.imagen2:hover .pantalla2{
-    opacity: 80%;
-    transition: 0.5s;
-}
-
-.imagen2:hover .letra4{
-    opacity: 200%;
-    transition: 0.5s;
-}
-
-
-
-.imagen3{
-    margin-top: 3.9vw;
-    margin-left: 3.9vw;
-    background-image: url(imagenes/jorge.JPG);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10%;
-    -webkit-transition: 0.5s;
-}
-
-.pantalla3{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    opacity: 0%;
-    transition: opacity 0.5s;
-    border-radius: 10%;
-}
-
-.letra5{
-    font-size: 2vw;
-    opacity: 0%;
-    padding-top: 2vw;
-    transition: opacity 0.5s;
-    color: white;
-}
-
-.imagen3:hover{
-    background-size: 110% 110%;
-    -webkit-transition: 0.5s;
-    cursor: pointer;
-}
-
-.imagen3:hover .pantalla3{
-    opacity: 80%;
-    transition: 0.5s;
-}
-
-.imagen3:hover .letra5{
-    opacity: 200%;
-    transition: 0.5s;
-}
-
-
-
-.imagen4{
-    margin-top: 3.9vw;
-    margin-left: 4.6vw;
-    background-image: url(imagenes/cesar.JPG);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10%;
-    -webkit-transition: 0.5s;
-}
-
-.pantalla4{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    opacity: 0%;
-    transition: opacity 0.5s;
-    border-radius: 10%;
-}
-
-.letra6{
-    font-size: 2vw;
-    opacity: 0%;
-    padding-top: 1vw;
-    transition: opacity 0.5s;
-    color: white;
-}
-
-.imagen4:hover{
-    background-size: 110% 110%;
-    -webkit-transition: 0.5s;
-    cursor: pointer;
-}
-
-.imagen4:hover .pantalla4{
-    opacity: 80%;
-    transition: 0.5s;
-}
-
-.imagen4:hover .letra6{
-    opacity: 200%;
-    transition: 0.5s;
-}
-
-
-
-
-
 .contactenos{
     padding-bottom: 5vw;
     background-color: white;
-    margin-top: 17vw;
+    margin-top: 8.7vw;
     padding-top: 0.2vw;
     width: 99.1vw;
     height: auto;    
@@ -745,7 +311,7 @@ html{
 
 
 main{
-    margin-top: 14vw;
+    margin-top: 12vw;
     width: 99.1vw;
     height: 32vw; 
     background-color: white;
@@ -890,7 +456,7 @@ main{
 
 .caja{
     margin-left: 10vw;
-    margin-top: 12vw;
+    margin-top: 11vw;
     background-image: url(imagenes/member.JPG);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -955,7 +521,7 @@ main{
 
 .caja2{
     margin-left: 54vw;
-    margin-top: 12vw;
+    margin-top: 11vw;
     background-image: url(imagenes/member.JPG);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1048,8 +614,6 @@ main{
 
 
 
-
-
 .gustos{
     background-color: white;
     border-radius: 2.5vw;
@@ -1094,4 +658,3 @@ main{
     padding: 0.5vw;
     font-size: 0.9vw;
 }
-

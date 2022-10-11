@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="logo.png">
-        <link rel="stylesheet" href="diseño.css">		
+        <link rel="stylesheet" href="diseno.css">		
 	</head>
 	<body>
 		<div style="display: flex;">
@@ -35,57 +35,3 @@
         </div>
 	</body>
 </html>
-<?php
-	if(isset($_POST['enviar']))
-	{
-		session_start();
-		include("conexion.php");
-		$usuario=$_POST['usuario'];
-		$clave=$_POST['clave'];
-
-		$sql="SELECT * FROM usuarios WHERE usuario='$usuario' AND clave='$clave' and clase!=2";
-		$query=mysqli_query($conexion,$sql);
-		$rows=mysqli_num_rows($query);
-		$array=mysqli_fetch_array($query);
-
-		if($rows!=0)
-		{
-			$_SESSION['id']=$array['id_usuario'];
-			if($array['clase']==1)
-			{
-				header("location:gustos.php");
-			}
-			if($array['clase']==0)
-			{
-				header("location:member.php");
-			}
-		}
-		else
-		{
-			header("location:login.php");
-		}
-	}
-
-	if(isset($_POST['enviar2']))
-	{
-		session_start();
-		include("conexion.php");
-		$usuario=$_POST['usuario'];
-		$clave=$_POST['clave'];
-
-		$sql="SELECT * FROM usuarios WHERE usuario='$usuario' AND clave='$clave' and clase=2";
-		$query=mysqli_query($conexion,$sql);
-		$rows=mysqli_num_rows($query);
-		$array=mysqli_fetch_array($query);
-
-		if($rows!=0)
-		{
-			$_SESSION['id']=$array['id_usuario'];
-			header("location:inicio2.php");
-		}
-		else
-		{
-			header("location:login.php");
-		}
-	}
-?>

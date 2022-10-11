@@ -31,5 +31,5 @@
 		$ej4=mysqli_query($conexion,$sql4);
 
 	}
-	header("Location:member.php");
+	header("Location:index.php");
 ?>

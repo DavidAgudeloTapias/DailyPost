@@ -5,14 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="logo.png">
-        <link rel="stylesheet" href="diseño.css">
+        <link rel="stylesheet" href="diseno.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     </head>
     <body>
         <div class="banner">
             <a href="index.php"><img src="logo.png" class="logo"></a>
             <div class="botones">
-                <a href="#quienes"><button class="boton4">Quienes somos</button></a>
                 <a href="#contactenos"><button class="boton2">Contáctenos</button></a>
                 <a href="#registro"><button class="boton">Registro</button></a>
                 <a href="login.php"><button class="boton3">Login</button></a>
@@ -92,139 +91,10 @@
 
             autoplay();
 
-        </script>               
-        <a name="quienes">         
+        </script>    
             <div class="info">
                 <p class="letra">Aquí encontrarás todo tipo de eventos, te enviaremos datos de cada uno. Para más información, únete a nuestra comunidad.</p>
-            </div>   
-            <div class="container">
-                <div class="form-box">
-                    <div class="button-box">
-                        <div id="elegir"></div>
-                        <button type="button" class="toggle-btn" onclick="login()">Quienes somos</button>
-                        <button type="button" class="toggle-btn" onclick="registrar()">Integrantes</button>
-                    </div>
-                    <div style="display: flex;">
-                        <form id="login" class="input-group">
-                            <table border="0" width="95%" align="center" style="margin-top: -5vw;">
-                                <tr>
-                                    <td width="33%"> 
-                                        <div class="texto1">
-                                            <center>Misión</center>
-                                            <div class="prueba"></div>
-                                            <div class="pantalla5">
-                                                <div class="letra8">
-                                                    <center>
-                                                        Proveer un ambiente divertido y seguro en los clientes y proporcionar apoyo publicitario a los empresarios.                                        
-                                                    </center>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td width="33%">
-                                        <div class="texto2">
-                                            <center>Visión</center>
-                                            <div class="pantalla6">
-                                                <div class="letra9">
-                                                    <center>
-                                                        Permanecer como un proyecto auténtico, liderado por la innovación y enfocado a hacer un aporte para un mundo mejor.                                     
-                                                    </center>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td width="34%">
-                                        <div class="texto3">
-                                            <center>Objetivo</center>
-                                            <div class="pantalla7">
-                                                <div class="letra10">
-                                                    <center>
-                                                        Buscar que un usuario se sienta comodo al momento de bucar algún evento que le gusta, y al mismo momento interarctuar con la página 
-                                                        de la mejor manera.                                   
-                                                    </center>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </form>
-                        <form id="registrar" class="input-group">
-                            <div class="quienes">
-                                <table border="0" width="95%" align="center">
-                                    <tr>
-                                        <td width="25%">
-                                            <div class="imagen">
-                                                <div class="pantalla">
-                                                    <div class="letra3">
-                                                        <center>
-                                                            David es un chico dedicado y responsable y está
-                                                            dispuesto a hacer todo lo posible por lograr sus metas.                                        
-                                                        </center>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td width="25%">
-                                            <div class="imagen2">
-                                                <div class="pantalla2">
-                                                    <div class="letra4">
-                                                        <center>
-                                                            Yulieth es una chica agradable, y responsable
-                                                            al momento de trabajar, responsable y una pieza importante en este proyecto.                                        
-                                                        </center>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td width="25%">
-                                            <div class="imagen3">
-                                                <div class="pantalla3">
-                                                    <div class="letra5">
-                                                        <center>
-                                                        Jorge es un chico que le gusta programar y cuando va a hacer algo se motiva y lo hace lo mejor posible, mostrando así sus grandes capacidades.                                        
-                                                        </center>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td width="25%">
-                                            <div class="imagen4">
-                                                <div class="pantalla4">
-                                                    <div class="letra6">
-                                                        <center>
-                                                        Cesar es un chico inteligente y además es trabajador y dedicado con lo que hace, dando apoyo y trabajando para sacar adelante este proyecto.                                        
-                                                        </center>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </form>
-                    </div>
-                </div>
             </div>
-            <script type="text/javascript">
-                var x = document.getElementById("login");
-                var y = document.getElementById("registrar");
-                var z = document.getElementById("elegir");
-
-                function login()
-                {
-                    x.style.left="2.6vw";
-                    y.style.left="107vw";
-                    z.style.left="0vw";
-                }
-
-                function registrar()
-                {
-                    x.style.left="-88.5vw";
-                    y.style.left="4vw";
-                    z.style.left="7.8vw";
-                }
-            </script>
         <a name="contactenos">
         </a>
             <div class="contactenos">
@@ -256,7 +126,7 @@
                         </div> 
                         <button type="submit" class="enviar">ENVIAR</button>                            
                     </form>
-                    <br>      
+                    <br>
                 </div>                    
             </div>
         <a name="registro">
