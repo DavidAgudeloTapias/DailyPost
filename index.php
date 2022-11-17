@@ -20,7 +20,7 @@
         <style>
             body
             {
-                background-color: #121212;;
+                background-color: #121212;
             }
         </style>
         <div class="contenedor-slider">
@@ -201,7 +201,7 @@
 
             </script>     
         <div class="footer">
-            <div class="letrafooter"><h4>Daily Post® 2020</h4></div>
+            <div class="letrafooter"><h4>Daily Post® 2022</h4></div>
         </div>
     </body>
 </html>

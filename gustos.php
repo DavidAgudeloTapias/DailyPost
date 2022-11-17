@@ -5,8 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="logo jorge.png">
-        <link rel="stylesheet" href="diseño.css">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <link rel="stylesheet" href="diseno.css">
     </head>
     <body>
         <div class="gustos">

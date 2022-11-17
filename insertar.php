@@ -1,11 +1,11 @@
 <?php 
 	include("conexion.php");
-	$nombre=$_POST['nombre'];
-	$correo=$_POST['correo'];
-	$usuario=$_POST['usuario'];
-	$clave=$_POST['clave'];
+	$nombre = $_POST['nombre'];
+	$correo = $_POST['correo'];
+	$usuario = $_POST['usuario'];
+	$clave = $_POST['clave'];
 
-	//$foto=addslashes(file_get_contents($_FILES['foto']['tmp_name']));
+	$foto = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
 
 	if(isset($_POST['enviar1']))
 	{
