@@ -80,7 +80,7 @@
 
 		if($rows != 0)
 		{
-			$_SESSION['id']=$array['id_usuario'];
+			$_SESSION['id'] = $array['id_usuario'];
 			header("location:business.php");
 		}
 		else
