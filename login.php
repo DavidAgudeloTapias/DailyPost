@@ -40,22 +40,22 @@
 	{
 		include("conexion.php");
 		session_start();
-		$usuario=$_POST['usuario'];
-		$clave=$_POST['clave'];
+		$usuario = $_POST['usuario'];
+		$clave = $_POST['clave'];
 
-		$sql="SELECT * FROM usuarios WHERE usuario='$usuario' AND clave='$clave' and clase !=2";
-		$query=mysqli_query($conexion,$sql);
-		$rows=mysqli_num_rows($query);
-		$array=mysqli_fetch_array($query);
+		$sql = "SELECT * FROM usuarios WHERE usuario='$usuario' AND clave='$clave' and clase !=2";
+		$query = mysqli_query($conexion,$sql);
+		$rows = mysqli_num_rows($query);
+		$array = mysqli_fetch_array($query);
 
 		if($rows!=0)
 		{
-			$_SESSION['id']=$array['id_usuario'];
-			if($array['clase']==1)
+			$_SESSION['id'] = $array['id_usuario'];
+			if($array['clase'] == 1)
 			{
 				header("location:gustos.php");
 			}
-			if($array['clase']==0)
+			if($array['clase'] == 0)
 			{
 				header("location:member.php");
 			}
@@ -70,13 +70,13 @@
 	{
 		session_start();
 		include("conexion.php");
-		$usuario=$_POST['usuario'];
-		$clave=$_POST['clave'];
+		$usuario = $_POST['usuario'];
+		$clave = $_POST['clave'];
 
-		$sql="SELECT * FROM usuarios WHERE usuario='$usuario' AND clave='$clave' and clase=2";
-		$query=mysqli_query($conexion,$sql);
-		$rows=mysqli_num_rows($query);
-		$array=mysqli_fetch_array($query);
+		$sql = "SELECT * FROM usuarios WHERE usuario='$usuario' AND clave='$clave' and clase=2";
+		$query = mysqli_query($conexion,$sql);
+		$rows = mysqli_num_rows($query);
+		$array = mysqli_fetch_array($query);
 
 		if($rows != 0)
 		{

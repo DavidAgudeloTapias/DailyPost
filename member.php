@@ -36,9 +36,8 @@
             if($numrows != 0)
             {
                 $filtro = $_GET['search'];
-                $sql = "SELECT * FROM eventos JOIN categoria JOIN gustos JOIN usuarios WHERE eventos.nombre_evento LIKE '%$filtro%' AND 
-                    eventos.id_evento = categoria.id_evento AND categoria.categoria = gustos.gustos AND gustos.id_usuario = usuarios.id_usuario 
-                    AND usuarios.id_usuario = '$id'";
+                $sql = "SELECT * FROM categoria JOIN gustos on gustos.gustos = categoria.categoria JOIN eventos on eventos.nombre_evento LIKE '%$filtro%'
+                        AND categoria.id_evento = eventos.id_evento JOIN usuarios on usuarios.id_usuario = '$id' GROUP BY eventos.id_evento";
                 $query = mysqli_query($conexion,$sql);
     ?>
                     <div class="eventos">
@@ -75,8 +74,8 @@
 
             if($numrows != 0)
             {
-                $sql = "SELECT * FROM eventos JOIN categoria JOIN gustos JOIN usuarios WHERE eventos.id_evento = categoria.id_evento AND 
-                    categoria.categoria = gustos.gustos AND gustos.id_usuario = usuarios.id_usuario AND usuarios.id_usuario = '$id'";
+                $sql = "SELECT * FROM categoria JOIN gustos on gustos.gustos = categoria.categoria JOIN eventos on 
+                        categoria.id_evento = eventos.id_evento JOIN usuarios on usuarios.id_usuario = '$id' GROUP BY eventos.id_evento";
                 $query = mysqli_query($conexion,$sql);
     ?>
                 <div class="eventos">

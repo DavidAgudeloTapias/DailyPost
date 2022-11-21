@@ -14,7 +14,7 @@
                 <div style="display: block; margin-top: 2vw; margin-left: 2.5vw;">
                     <center><h3>Elige tus gustos.</h3></center>
                     <center><h4>Música</h4></center>
-                    <form action="paso1.php" method="POST">
+                    <form action="insertarGustos.php" method="POST">
                         <center>
                             <label><input type="checkbox" name="musica[]" value="rock">Rock</label>
                             <label><input type="checkbox" name="musica[]" value="rap">Rap</label>

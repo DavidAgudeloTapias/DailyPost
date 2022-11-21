@@ -11,8 +11,7 @@
 <body>
     <?php
         include("bannerBusiness.php");
-    ?>
-    <?php
+
         $id = $_SESSION['id'];
         $sql = "SELECT * FROM usuarios WHERE id_usuario = '$id'";
         $query = mysqli_query($conexion,$sql);

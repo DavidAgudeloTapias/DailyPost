@@ -16,6 +16,7 @@
 
 .menu h4{
     font-size: 20px;
+    margin-right: 30px;
 }
 
 .logoMember{
@@ -29,7 +30,8 @@
     border-radius: 100%;
     width: 55px;
     height: 55px;
-    margin-right: 10px;
+    margin-right: 30px;
+    margin-left: -70px;
 }
 
 .button{
@@ -61,6 +63,7 @@ input{
     padding: 10px;
     margin-left: 42px;
     font-size: 25px;
+    outline: none;
 }
 
 .eventos{
@@ -78,7 +81,7 @@ input{
     max-width: 300px;
     flex: 1 1 210px;
     text-align: center;
-    height: 500px;
+    height: 700px;
     border: 1px solid lightgrey;
     margin: 20px;
 }
@@ -110,7 +113,7 @@ input{
     padding: 1em;
     width: 80%;
     cursor: pointer;
-    margin-top: 3em;
+    margin-top: 5em;
     font-weight: bold;
     position: relative;
 }

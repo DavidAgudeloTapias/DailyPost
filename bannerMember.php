@@ -45,11 +45,11 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <li>
-                                <a href="editar.php">Editar Perfil</a>
+                                <a href="editar.php"> Editar Perfil </a>
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="index.php">cerrar session</a>
+                                <a href="index.php">Cerrar sesión</a>
                             </li>
                         </div>
                     </div>
