@@ -39,6 +39,9 @@
                 $sql = "SELECT * FROM categoria JOIN gustos on gustos.gustos = categoria.categoria JOIN eventos on eventos.nombre_evento LIKE '%$filtro%'
                         AND categoria.id_evento = eventos.id_evento JOIN usuarios on usuarios.id_usuario = '$id' GROUP BY eventos.id_evento";
                 $query = mysqli_query($conexion,$sql);
+                $sql2 = "SELECT * FROM usuarios JOIN eventos on usuarios.id_usuario = eventos.id_usuario";
+                $query2 = mysqli_query($conexion,$sql2);
+                $fetch2 = mysqli_fetch_array($query2);
     ?>
                     <div class="eventos">
                         <?php
@@ -52,9 +55,10 @@
                                     <div class="caption">
                                         <p class="eventName"> <b> Nombre del evento:  </b> <?php echo $fetch['nombre_evento'] ?> </p>
                                         <p class="description"> <b> Descripción del evento: </b> <?php echo $fetch['descripcion'] ?> </p>
-                                        <p class="namePlace"> <b> Nombre del establecimiento: </b> <?php echo $fetch['nombre_usuario'] ?> </p>
+                                        <p class="namePlace"> <b> Nombre del establecimiento: </b> <?php echo $fetch2['nombre_usuario'] ?> </p>
+                                        <p class="direction"> <b> Dirección del establecimiento: </b> <?php echo $fetch['direccion'] ?> </p>
                                     </div>
-                                    <center> <button class="knowmore"> Saber mas del evento </button> </center>
+                                    <center> <a href="visualizarEvento.php ?id_evento=<?php echo $fetch['id_evento'] ?>"> <button class="knowmore"> Saber mas del evento </button> </a> </center>
                                 </div>
                         <?php
                             }
@@ -75,13 +79,18 @@
             if($numrows != 0)
             {
                 $sql = "SELECT * FROM categoria JOIN gustos on gustos.gustos = categoria.categoria JOIN eventos on 
-                        categoria.id_evento = eventos.id_evento JOIN usuarios on usuarios.id_usuario = '$id' GROUP BY eventos.id_evento";
+                        categoria.id_evento = eventos.id_evento JOIN usuarios on usuarios.id_usuario = '$id' 
+                        AND gustos.id_usuario = '$id' GROUP BY eventos.id_evento";
                 $query = mysqli_query($conexion,$sql);
+                $sql2 = "SELECT * FROM usuarios JOIN eventos on usuarios.id_usuario = eventos.id_usuario";
+                $query2 = mysqli_query($conexion,$sql2);
+                $fetch2 = mysqli_fetch_array($query2);
     ?>
                 <div class="eventos">
                     <?php
                         while($fetch = mysqli_fetch_array($query))
                         {
+                            $id_evento = $fetch['id_evento'];
                     ?>
                             <div class="card">
                                 <div class="image">
@@ -90,9 +99,10 @@
                                 <div class="caption">
                                     <p class="eventName"> <b> Nombre del evento:  </b> <?php echo $fetch['nombre_evento'] ?> </p>
                                     <p class="description"> <b> Descripción del evento: </b> <?php echo $fetch['descripcion'] ?> </p>
-                                    <p class="namePlace"> <b> Nombre del establecimiento: </b> <?php echo $fetch['nombre_usuario'] ?> </p>
+                                    <p class="namePlace"> <b> Nombre del establecimiento: </b> <?php echo $fetch2['nombre_usuario'] ?> </p>
+                                    <p class="direction"> <b> Dirección del establecimiento: </b> <?php echo $fetch['direccion'] ?> </p>
                                 </div>
-                                <center> <button class="knowmore"> Saber mas del evento </button> </center>
+                                <center> <a href="visualizarEvento.php ?id_evento=<?php echo $fetch['id_evento'] ?>"> <button class="knowmore"> Saber mas del evento </button> </a> </center>
                             </div>
                     <?php
                         }

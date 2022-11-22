@@ -6,7 +6,6 @@
 	$comida = $_POST['comida'];
 	$salidas = $_POST['salidas'];
 
-
 	if(isset($_POST['enviar']))
 	{
 		foreach ($_POST['musica'] as $gusto) 
@@ -31,5 +30,5 @@
 		$ej4 = mysqli_query($conexion,$sql4);
 
 	}
-	header("Location:index.php");
+	header("Location:member.php");
 ?>

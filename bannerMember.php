@@ -25,9 +25,7 @@
         $fetch = mysqli_fetch_array($query);
     ?>
     <div class="bannerMember">
-        <a href="member.php">
-            <img src="imagenes/member.png" class="logoMember">
-        </a>
+        <img src="imagenes/member.png" class="logoMember">
         <div class="menu">
             <table border="0">
                 <td>
@@ -45,7 +43,11 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
                             <li>
-                                <a href="editar.php"> Editar Perfil </a>
+                                <a href="member.php"> Inicio </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="editarPerfilMember.php"> Editar Perfil </a>
                             </li>
                             <li class="divider"></li>
                             <li>

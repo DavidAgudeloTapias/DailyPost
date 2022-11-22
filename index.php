@@ -132,7 +132,6 @@
         <a name="registro">
         </a> 
             <main>
-			<a href="map.php"><button class="boton">Mapas</button></a>
                 <div class="contenedor_todo">
                     <div class="caja_trasera">
                         <div class="caja_trasera_business">

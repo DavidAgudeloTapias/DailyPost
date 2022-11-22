@@ -36,8 +36,8 @@
                                 <p class="eventName"> <b> Nombre del evento:  </b> <?php echo $fetch['nombre_evento'] ?> </p>
                                 <p class="description"> <b> Descripción del evento: </b> <?php echo $fetch['descripcion'] ?> </p>
                                 <p class="namePlace"> <b> Nombre del establecimiento: </b> <?php echo $fetch['nombre_usuario'] ?> </p>
+                                <p class="direction"> <b> Dirección del establecimiento: </b> <?php echo $fetch['direccion'] ?> </p>
                             </div>
-                            <center> <button class="knowmore"> Editar Evento </button> </center>
                         </div>
                 <?php
                     }
