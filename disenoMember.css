@@ -269,3 +269,10 @@ body h4{
 	border-bottom: solid black;
 	text-align: center;
 }
+#map{
+	margin-top: 2%;
+	width: 70%;
+	height: 765px;
+	border: #2c3e50 solid;
+	border-width: 4px 4px 4px 4px;
+}
