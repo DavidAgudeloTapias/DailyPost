@@ -8,7 +8,7 @@
     echo $_FILES['foto']['tmp_name'];
     $clave = $_POST['clave'];
 
-    if(!empty($_FILES['foto']['name']) && isset($_POST['enviar']))
+    if(!empty($_FILES['foto']['name']))
     {
         $foto = addslashes(file_get_contents($_FILES['foto']['tmp_name']));
         $sql = "UPDATE usuarios SET nombre_usuario = '$nombre', usuario = '$usuario', clave = '$clave', foto = '$foto' WHERE id_usuario = '$id'";

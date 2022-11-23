@@ -87,9 +87,9 @@ input{
     max-width: 350px;
     flex: 1 1 210px;
     text-align: center;
-    height: 700px;
+    height: 775px;
     border: 1px solid lightgrey;
-    margin: 30px;
+    margin: 20px;
 }
 
 .eventos .card .image{
@@ -119,7 +119,7 @@ input{
     padding: 1em;
     width: 80%;
     cursor: pointer;
-    margin-top: 6em;
+    margin-top: 7.2em;
     font-weight: bold;
     position: relative;
 }
