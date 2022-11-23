@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php $api_key = "AIzaSyD_BWobrWBnTHXrS3lF_KgypkMYSmI-Bv4"; // API Key Google Maps?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="imagenes/member.JPG">
     <link rel="stylesheet" href="disenoMember.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<?=$api_key?>" ></script>
     <title>Información del Evento</title>
 </head>
 <body>
@@ -28,6 +31,7 @@
             $sql2 = "SELECT * FROM usuarios WHERE id_usuario = '$id_creador'";
             $query2 = mysqli_query($conexion,$sql);
     ?>
+			
             <div class="eventos">
                 <?php
                     while($fetch = mysqli_fetch_array($query2))
@@ -44,6 +48,28 @@
                         $query3 = mysqli_query($conexion,$sql3);
                         $fetch3 = mysqli_fetch_array($query3);
                 ?>
+						<script type="text/javascript">
+						  let map;
+						  let marker;
+						  let pos = { lat: <?php echo $fetch['latitud'] ?>, lng: <?php echo $fetch['longitud'] ?> };
+						  $(document).ready(function(){
+							  map = new google.maps.Map(document.getElementById("map"), {
+								  zoom: 18,
+								  center: pos,
+								  mapTypeControl: false,
+								  fullscreenControl: true,
+								  zoomControl: true,
+								  streetViewControl: false
+							  });
+
+							  marker = new google.maps.Marker({
+								  position: pos, 
+								  map: map, 
+								  draggable: false,
+							  });
+						  });
+						</script>
+
                         <div class="card">
                             <div class="image">
                                 <img src="data:image/jpg;base64,<?php echo base64_encode($fetch['foto_evento']); ?>">
@@ -58,6 +84,8 @@
                                 <center> <button class="knowmore"> Volver al inicio </button> </center>
                             </form>
                         </div>
+						<div id="map">
+						</div>
                 <?php
                     }
                 ?>
@@ -65,5 +93,8 @@
     <?php
         }
     ?>
+	<script async
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_BWobrWBnTHXrS3lF_KgypkMYSmI-Bv4&libraries=places&callback=initMap">
+	</script>
 </body>
 </html>
