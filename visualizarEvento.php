@@ -17,7 +17,7 @@
 
         if(isset($id_evento))
         {
-            $sql = "SELECT * FROM usuarios JOIN eventos on eventos.id_evento = '$id_evento'";
+            $sql = "SELECT * FROM eventos WHERE eventos.id_evento = '$id_evento'";
             $query = mysqli_query($conexion,$sql);
             $fetch = mysqli_fetch_array($query);
     ?>

@@ -13,7 +13,7 @@
         include("bannerMember.php");
     ?>
     <h2> Editar información del perfil </h2>
-    <form action="cambiarInfoMember.php" method="POST" autocomplete="off" required>
+    <form action="cambiarInfoMember.php" method="POST" enctype="multipart/form-data" autocomplete="off" required>
         <div class="botonImagen">
             <td>
                 <img src="data:image/jpg;base64,<?php echo base64_encode($fetch['foto']); ?>" class="imageMember2">

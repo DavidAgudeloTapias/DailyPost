@@ -36,5 +36,5 @@
 		$sql = "INSERT INTO categoria(id_categoria,id_evento,categoria,id_cre) VALUES (NULL,'$id_evento','$gusto3','$id_usuario')";
 		$ej = mysqli_query($conexion,$sql);
 	}
-	header("location:business.php");
+	header("location:map.php?id_evento=$id_evento");
 ?>
