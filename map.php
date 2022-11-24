@@ -38,6 +38,7 @@
     <title>Map</title>
     <link rel="stylesheet" href="flatly.min.css">
     <link rel="stylesheet" href="disenoMember.css">
+    <link rel="icon" type="image/png" href="imagenes/business.JPG">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=<?=$api_key?>" ></script>
     <style>

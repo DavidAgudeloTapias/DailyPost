@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php $api_key = "AIzaSyD_BWobrWBnTHXrS3lF_KgypkMYSmI-Bv4"; // API Key Google Maps?>
+    <?php $api_key = "AIzaSyD_BWobrWBnTHXrS3lF_KgypkMYSmI-Bv4"; // API Key Google Maps?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,25 +49,27 @@
                         $fetch3 = mysqli_fetch_array($query3);
                 ?>
 						<script type="text/javascript">
-						  let map;
-						  let marker;
-						  let pos = { lat: <?php echo $fetch['latitud'] ?>, lng: <?php echo $fetch['longitud'] ?> };
-						  $(document).ready(function(){
-							  map = new google.maps.Map(document.getElementById("map"), {
-								  zoom: 18,
-								  center: pos,
-								  mapTypeControl: false,
-								  fullscreenControl: true,
-								  zoomControl: true,
-								  streetViewControl: false
-							  });
+						let map;
+                        let marker;
+                        let pos = { lat: <?php echo $fetch['latitud'] ?>, lng: <?php echo $fetch['longitud'] ?> };
+                        $(document).ready(function()
+                        {
+							map = new google.maps.Map(document.getElementById("map"),
+                            {
+								zoom: 18,
+								center: pos,
+								mapTypeControl: false,
+								fullscreenControl: true,
+								zoomControl: true,
+								streetViewControl: false
+							});
 
-							  marker = new google.maps.Marker({
-								  position: pos, 
-								  map: map, 
-								  draggable: false,
-							  });
-						  });
+							marker = new google.maps.Marker({
+								position: pos, 
+								map: map, 
+								draggable: false,
+							});
+						});
 						</script>
 
                         <div class="card">

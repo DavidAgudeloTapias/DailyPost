@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.eventos{
+    padding-top: 10%;
+    max-width: 1600px;
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.eventos .card{
+    background-color: white;
+    max-width: 350px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 775px;
+    border: 1px solid lightgrey;
+    margin: 20px;
+}
+
+.eventos .card .image{
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.eventos .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eventos .card .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 2em;
+    height: 25%;
+}
+
+.eventos .card .caption p{
+    font-size: 1rem;
+}
+
+.eventos .card button{
+    border: 2px solid black;
+    padding: 1em;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 7.2em;
+    font-weight: bold;
+    position: relative;
+}
+
+.eventos .card button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+    margin: 0;
+}
+
+.eventos .card button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+}
+
+.eventos .card button:hover::before{
+    width: 15%;
+}
+
+.eventos .card button:hover::after{
+    width: 15%;
+}
+
+.banner2{
+    top: 0;
+    box-shadow: 0vw 0vw 1vw 1.1vw lightblue;
+    background-color: lightblue ;
+    width: 100%;
+    height: 7.6vw;
+    position: fixed;
+    z-index: 1;  
+}
+
+.boton5{
+    margin-left: 43vw; 
+    margin-top: 2.9vw;
+    background: none;
+    border: 0;
+    color: black;
+    width: 15%;
+    height: 2.85vw;
+    font-size: 1.1vw;
+    outline: none;
+    -webkit-transition: 0.4s;  
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+
+.boton5:hover{
+    transform: scale(1.1);
+    -webkit-transition: 0.4s;
+    cursor: pointer;
+}
+
+.logo{
+    position: absolute;
+    margin-top: 1%;
+    width: 10%;
+    margin-left: 2.4vw;
+}

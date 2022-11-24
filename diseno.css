@@ -29,9 +29,28 @@ html{
     margin-left: 2.4vw;
 }
 
+.boton4{
+    margin-left: 4vw; 
+    margin-top: 2.9vw;
+    background: none;
+    border: 0;
+    color: black;
+    width: 15%;
+    height: 2.85vw;
+    font-size: 1.1vw;
+    outline: none;
+    -webkit-transition: 0.4s;
+}
+
+.boton4:hover{
+    transform: scale(1.1);
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+}
+
 .boton{
     margin-right: 1vw;
-    margin-left: 4vw; 
+    margin-left: 3vw; 
     margin-top: 2.9vw;
     background: none;
     border: 0;
@@ -50,8 +69,7 @@ html{
 }
 
 .boton2{
-    margin-right: 0vw;
-    margin-left: 4.5vw;
+    margin-left: 3vw;
     margin-top: 2.9vw;
     background: none;
     border: 0;
@@ -90,7 +108,7 @@ html{
 }
 
 .botones{
-    margin-left: 60vw;
+    margin-left: 50vw;
 }
 
 
