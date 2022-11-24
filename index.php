@@ -112,7 +112,7 @@
                             <input type="text" name="nombre" class="nombre" placeholder="Nombre" required autocomplete="off">
                             <input type="text" name="asunto" class="asunto" placeholder="Asunto" required autocomplete="off ">
                             <img src="imagenes/whatsapp.png" class="whatsapp">
-                            <p class="textowhatsapp"> Whatsapp : +57 3226403046</p> 
+                            <p class="textowhatsapp"> Whatsapp : +57 1234567890</p> 
                         </div> 
                         <br>
                         <div style="display: flex;">
