@@ -9,7 +9,7 @@
     if (isset($_POST['buscar']))
     {
         // Parametros de Configuracion
-        $api_key = "AIzaSyD_BWobrWBnTHXrS3lF_KgypkMYSmI-Bv4"; // API Key Google Maps
+        $api_key = "AIzaSyBe5S33wcV4uLUcJtO2eQKcnFm0802_8i4"; // API Key Google Maps
 
         $find = urlencode(trim($_POST['find']));
         
@@ -36,11 +36,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
-    <link rel="stylesheet" href="flatly.min.css">
     <link rel="stylesheet" href="disenoMember.css">
     <link rel="icon" type="image/png" href="imagenes/business.JPG">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=<?=$api_key?>" ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<?=$api_key?>&libraries=places&callback=initMap"></script>
     <style>
         #map{
             margin-left: 10%;
@@ -105,8 +104,5 @@
     </div>
     <hr>
 	<center> <a href="./insertarDireccion.php?id_evento=<?php echo urlencode($id_evento) ?>&longitude=<?php echo urlencode($longitude) ?>&latitude=<?php echo urlencode($latitude) ?>&direccion=<?php echo urlencode($formatted_address) ?>"> <button class="knowmore"> Confirmar lugar </button> </a> </center>
-	<script async
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_BWobrWBnTHXrS3lF_KgypkMYSmI-Bv4&libraries=places&callback=initMap">
-	</script>
 </body>
 </html>

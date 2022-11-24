@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <?php $api_key = "AIzaSyD_BWobrWBnTHXrS3lF_KgypkMYSmI-Bv4"; // API Key Google Maps?>
+    <?php $api_key = "AIzaSyBe5S33wcV4uLUcJtO2eQKcnFm0802_8i4"; // API Key Google Maps?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="imagenes/member.JPG">
     <link rel="stylesheet" href="disenoMember.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=<?=$api_key?>" ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<?=$api_key?>&libraries=places&callback=initMap"></script>
     <title>Información del Evento</title>
 </head>
 <body>
@@ -95,8 +95,5 @@
     <?php
         }
     ?>
-	<script async
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_BWobrWBnTHXrS3lF_KgypkMYSmI-Bv4&libraries=places&callback=initMap">
-	</script>
 </body>
 </html>
