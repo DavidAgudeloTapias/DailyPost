@@ -12,6 +12,7 @@
         <div class="banner">
             <a href="index.php"><img src="logo.png" class="logo"></a>
             <div class="botones">
+                <a href="eventos.php"><button class="boton4">Eventos</button></a>
                 <a href="#contactenos"><button class="boton2">Contáctenos</button></a>
                 <a href="#registro"><button class="boton">Registro</button></a>
                 <a href="login.php"><button class="boton3">Login</button></a>

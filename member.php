@@ -36,28 +36,36 @@
             if($numrows != 0)
             {
                 $filtro = $_GET['search'];
-                $sql2 = "SELECT * FROM categoria JOIN gustos on gustos.gustos = categoria.categoria JOIN eventos on 
+                $sql = "SELECT * FROM categoria JOIN gustos on gustos.gustos = categoria.categoria JOIN eventos on 
                         eventos.nombre_evento LIKE '%$filtro%' AND categoria.id_evento = eventos.id_evento JOIN usuarios on 
-                        usuarios.id_usuario = '$id' AND gustos.id_usuario = '$id' AND usuarios.id_usuario = eventos.id_usuario
-                        GROUP BY eventos.id_evento";
-                $query2 = mysqli_query($conexion,$sql2);
-                $fetch2 = mysqli_fetch_array($query2);
+                        usuarios.id_usuario = '$id' AND gustos.id_usuario = '$id' GROUP BY eventos.id_evento";
+                $query = mysqli_query($conexion,$sql);
     ?>
                     <div class="eventos">
                         <?php
-                            while($var = mysqli_fetch_array($query2))
+                            while($fetch = mysqli_fetch_array($query))
                             {
-                                $id_evento = $fetch2['id_evento'];
+                                $id_evento = $fetch['id_evento'];
+
+                                $sql2 = "SELECT * FROM eventos WHERE id_evento = '$id_evento'";
+                                $query2 = mysqli_query($conexion,$sql2);
+                                $fetch2 = mysqli_fetch_array($query2);
+
+                                $id_creador = $fetch2['id_usuario'];
+
+                                $sql3 = "SELECT * FROM usuarios JOIN eventos on usuarios.id_usuario = eventos.id_usuario and usuarios.id_usuario = '$id_creador'";
+                                $query3 = mysqli_query($conexion,$sql3);
+                                $fetch3 = mysqli_fetch_array($query3);
                         ?>
                                 <div class="card">
                                     <div class="image">
-                                        <img src="data:image/jpg;base64,<?php echo base64_encode($var['foto_evento']); ?>">
+                                        <img src="data:image/jpg;base64,<?php echo base64_encode($fetch['foto_evento']); ?>">
                                     </div>
                                     <div class="caption">
-                                        <p class="eventName"> <b> Nombre del evento:  </b> <?php echo $var['nombre_evento'] ?> </p>
-                                        <p class="description"> <b> Descripción del evento: </b> <?php echo $var['descripcion'] ?> </p>
-                                        <p class="namePlace"> <b> Nombre del establecimiento: </b> <?php echo $fetch2['nombre_usuario'] ?> </p>
-                                        <p class="direction"> <b> Dirección del establecimiento: </b> <?php echo $var['direccion'] ?> </p>
+                                        <p class="eventName"> <b> Nombre del evento:  </b> <?php echo $fetch['nombre_evento'] ?> </p>
+                                        <p class="description"> <b> Descripción del evento: </b> <?php echo $fetch['descripcion'] ?> </p>
+                                        <p class="namePlace"> <b> Nombre del establecimiento: </b> <?php echo $fetch3['nombre_usuario'] ?> </p>
+                                        <p class="direction"> <b> Dirección del establecimiento: </b> <?php echo $fetch['direccion'] ?> </p>
                                     </div>
                                     <center> <a href="visualizarEvento.php?id_evento=<?php echo urlencode($id_evento) ?>"> <button class="knowmore"> Saber mas del evento </button> </a> </center>
                                 </div>
