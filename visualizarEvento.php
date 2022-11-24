@@ -93,8 +93,5 @@
     <?php
         }
     ?>
-	<script async
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_BWobrWBnTHXrS3lF_KgypkMYSmI-Bv4&libraries=places&callback=initMap">
-	</script>
 </body>
 </html>
